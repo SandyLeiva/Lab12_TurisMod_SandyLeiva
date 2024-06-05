@@ -22,24 +22,16 @@ export class AuthService {
     }
     return false;
   }
-
   logout(): void {
     this.isAuthenticated = false;
-    this.authStatusSubject.next(false); // Emitir un valor falso cuando el usuario cierra sesión
+    this.authStatusSubject.next(false); 
   }
-
   isAuthenticatedUser(): boolean {
     return this.isAuthenticated;
   }
   getAuthStatus(): BehaviorSubject<boolean> {
     return this.authStatusSubject;
   }
-  
-  getUsername(): string {
-    return this.username;
-  }
-
-  getPassword(): string {
-    return this.password;
-  }
+  getUsername(): string {return this.username;}
+  getPassword(): string {return this.password;}
 }

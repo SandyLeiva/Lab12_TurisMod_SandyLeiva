@@ -4,7 +4,6 @@ import { BrowserModule  } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 
 import { ComponentsComponent } from './components/components.component';
-import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { ContactoComponent } from './components/contacto/contacto.component'; 
 import { GaleriaComponent } from './components/galeria/galeria.component'; 
@@ -13,7 +12,6 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { LoginComponent } from './auth/login/login.component';
 import { AuthGuard } from './auth/auth.guard';
 import { PerfilComponent } from './components/perfil/perfil.component';
-
 
 const routes: Routes =[
   { path: 'login', component: LoginComponent },
@@ -24,11 +22,8 @@ const routes: Routes =[
   { path: 'contact', component: ContactoComponent },
   { path: 'galeria', component: GaleriaComponent },
   { path: 'servicios', component: ServiciosComponent },
-  { path: 'nucleoicons', component: NucleoiconsComponent },
   { path: '**', component: NotFoundComponent }
 ];
-
-
 @NgModule({
   imports: [
     CommonModule,

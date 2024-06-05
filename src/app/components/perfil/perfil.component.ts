@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 
 export class PerfilComponent implements OnInit {
-  isLoggedIn: boolean = false; // Bandera para verificar si el usuario está autenticado
+  isLoggedIn: boolean = false;
   username: string;
   password: string;
   passwordMasked: string;
@@ -18,25 +18,20 @@ export class PerfilComponent implements OnInit {
 
   ngOnInit(): void {
     this.updateUserData();
-    // Escucha los cambios en el estado de autenticación
     this.authService.getAuthStatus().subscribe((authStatus: boolean) => {
       if (authStatus) {
         this.updateUserData();
       }
     });
-    this.isLoggedIn = this.authService.isAuthenticatedUser(); // Verificar el estado de autenticación al inicializar el componente
+    this.isLoggedIn = this.authService.isAuthenticatedUser(); 
 
   }
   private updateUserData(): void {
-    // Verifica si el usuario está autenticado
     if (this.authService.isAuthenticatedUser()) {
-      // Obtiene el nombre de usuario y la contraseña del servicio AuthService
       this.username = this.authService.getUsername();
       this.password = this.authService.getPassword();
-      // Enmascara la contraseña
       this.passwordMasked = '*'.repeat(this.password.length);
     } else {
-      // Si el usuario no está autenticado, establece los datos en blanco
       this.username = '';
       this.password = '';
       this.passwordMasked = '';
@@ -47,5 +42,4 @@ export class PerfilComponent implements OnInit {
     this.authService.logout();
     this.router.navigate(['/home']);
   }
-  
 }

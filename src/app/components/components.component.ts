@@ -7,7 +7,7 @@ import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
     styles: [`
     ngb-progressbar {
         margin-top: 5rem;
-    },
+    }
     .itinerarios {
     padding: 0;
     list-style: none;
@@ -21,7 +21,6 @@ import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
         padding: 20px;
         transition: background-color 0.3s ease, box-shadow 0.3s ease;
     }
-
     .itinerario-item:hover {
         background-color: #fff;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -32,12 +31,10 @@ import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
         color: #e74c3c;
         margin-bottom: 10px;
     }
-
     .itinerario-item p {
         font-size: 1rem;
         color: #333;
     }
-
     `]
 })
 

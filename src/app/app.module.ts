@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 
-import { ComponentsModule } from './components/components.module'; // Asegúrate de importar el módulo que contiene NosotrosComponent
+import { ComponentsModule } from './components/components.module'; 
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { LoginComponent } from './auth/login/login.component';
 import { PerfilComponent } from './components/perfil/perfil.component';
