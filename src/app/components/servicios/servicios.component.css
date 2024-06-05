@@ -1,0 +1,34 @@
+.service-icon {
+    font-size: 5rem;
+    color: #dc5635;
+    transition: transform 0.3s ease;
+}
+
+.service-icon:hover {
+    transform: scale(1.1);
+}
+
+.section-services {
+    background-color: #f8f9fa;
+}
+
+.tim-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.service {
+    text-align: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.service h4 {
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+.service p {
+    margin-top: 10px;
+    color: #6c757d;
+}

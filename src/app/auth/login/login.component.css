@@ -1,0 +1,9 @@
+.input-group-focus .form-control {
+    border-color: #d43f3a; 
+    box-shadow: 0 0 5px rgba(212, 63, 58, 0.5); 
+  }
+  
+  .input-group .form-control {
+    transition: border-color 0.3s, box-shadow 0.3s; 
+  }
+  

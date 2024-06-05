@@ -1,0 +1,39 @@
+<div class="wrapper">
+  <div class="page-header" style="background-image: url('./assets/img/login-image.jpg');">
+      <div class="filter"></div>
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-4 col-sm-6 mr-auto ml-auto">
+                    <div class="card card-register">
+                        <h3 class="title">Bienvenido</h3>
+                        <form class="register-form" (ngSubmit)="login()">
+                            <label>Usuario</label>
+                            <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus===true}">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="nc-icon nc-email-85"></i>
+                                </span>
+                              </div>
+                                <input type="text" class="form-control" id="username" [(ngModel)]="username" name="username" required placeholder="Usuario" (focus)="focus=true" (blur)="focus=false">
+                              </div>
+
+                            <label>Contraseña</label>
+                            <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus1===true}">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="nc-icon nc-key-25"></i>
+                                </span>
+                              </div>
+                                <input type="password" id="password" [(ngModel)]="password" name="password" required class="form-control" placeholder="Password" (focus)="focus1=true" (blur)="focus1=false" >
+                              </div>
+                            <button class="btn btn-danger btn-block btn-round" type="submit">Iniciar Sesión</button>
+                        </form>
+                    </div>
+                  </div>
+              </div>
+              <div class="footer register-footer text-center">
+                  <h6>&copy;{{test | date: 'yyyy'}}, hecho por <i class="fa fa-heart heart"></i> Sandy Leiva</h6>
+              </div>
+          </div>
+  </div>
+</div>

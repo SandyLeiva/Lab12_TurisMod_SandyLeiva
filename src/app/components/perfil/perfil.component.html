@@ -1,0 +1,27 @@
+<div class="wrapper">
+  <div class="page-header page-header-xs" data-parallax="true" style="background-image: url('./assets/img/fon.png');">
+      <div class="filter"></div>
+  </div>
+  <div class="section profile-content">
+      <div class="container">
+          <div class="owner">
+              <div class="avatar">
+                  <img src="./assets/img/faces/perfil.png" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+              </div>
+              <div class="name">
+                  <h4 class="title">{{ username }}<br /></h4>
+                  <h6 class="description">Usuario Registrado</h6>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-6 ml-auto mr-auto text-center">
+                  <p>Bienvenido a tu perfil. Aquí puedes ver tu información personal y gestionar tu cuenta.</p>
+                  <br />
+                  <p><strong>Contraseña:</strong> {{ passwordMasked }}</p>
+                  <br />
+                  <button class="btn btn-outline-danger btn-round" (click)="logout()"><i class="fa fa-sign-out"></i> Cerrar Sesión</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

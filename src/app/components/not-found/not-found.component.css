@@ -1,0 +1,45 @@
+.not-found {
+  text-align: center;
+  align-content: center;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.not-found i {
+  font-size: 96px; 
+  color: #f44336; 
+  margin-right: 55px;
+}
+
+.not-found h2 {
+  font-size: 36px; 
+  margin: 20px 0; 
+  font-family: 'Arial', sans-serif;
+  color: #333; 
+}
+
+.not-found p {
+  font-size: 18px; 
+  margin-bottom: 30px; 
+  color: #666; 
+}
+
+.not-found a {
+  text-decoration: none; 
+  color: #000000;
+  font-weight: bold;
+}
+
+
+@media screen and (min-width: 768px) {
+  .not-found {
+    text-align: center;
+    align-content: center;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }
+}

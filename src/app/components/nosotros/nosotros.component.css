@@ -1,0 +1,162 @@
+:host {
+  display: block;
+}
+.section {
+  padding: 80px 0;
+}
+
+.tim-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.tim-title h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.tim-title h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#about-us {
+  margin-bottom: 50px;
+}
+
+#about-us p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+#team .team-member {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#team .team-member img {
+  width: 15rem;
+  height: 10rem;
+  margin-bottom: 20px;
+}
+
+#team .team-member h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#team .team-member p {
+  font-size: 16px;
+}
+#history p{
+  font-size: 16px;
+  line-height: 2.0;
+  font-weight: 400;
+}
+.team-image {
+  width: 100%; 
+  height: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.grid-container-out {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas con el mismo ancho */
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  .grid-container-out {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+.card-consul {
+  border: 1px solid #cccccca9;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  -webkit-box-shadow: 6px 6px 25px -18px rgba(0,0,0,0.54);
+  -moz-box-shadow: 6px 6px 25px -18px rgba(0,0,0,0.54);
+  box-shadow: 6px 6px 25px -12px rgba(0,0,0,0.54);
+  scale: 1;
+  transition-duration: 500ms;
+}
+.card-consul:hover{
+  scale: 1.02;
+}
+
+.servi-col{
+  width: 50%;
+}
+.servi-doscol{
+  display: flex;
+  gap: 60px;
+  position: relative;
+  margin: 60px 0;
+}
+.servi-doscol h2{
+  color: #000;
+  line-height: 1.333;
+  font-size: 25px;
+  margin-top: 10px;
+  text-transform: inherit;
+}
+.servi-col-barra{
+  gap: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.txt-p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 20%;
+}
+.txt-p img {
+  width: 50rem;
+  height: 20rem;
+  position: relative;
+  object-fit: cover;
+  object-position: top; 
+}
+
+.txt-p p{
+  font-size: 18px;
+  line-height: 34px;
+}
+@media screen and (max-width: 48rem) {
+
+  .servi-doscol{
+    display: inline-block;
+    width: 100%;
+  }
+  .servi-col{
+    width: 100%;
+  }
+  .servi-col-barra{
+    width: 25%;
+    display: flex;
+    align-items: center;
+  }
+  .servi-doscol h2{
+    font-size: 22px;
+    margin-top: 10px;
+  }
+  .txt-p p{
+    font-size: 14px;
+    line-height: 34px;
+  }
+  
+}

@@ -1,0 +1,188 @@
+<div class="page-header" data-parallax="true" style="background-image: url('./assets/img/daniel-olahh.jpg');">
+    <div class="filter"></div>
+    <div class="container">
+        <div class="motto text-center">
+            <h1>Lugares del Perú</h1>
+            <h3>Hermosos paisajes que no te arrepentirás en conocer</h3>
+            <br />
+            <button [routerLink]="['/galeria']" type="button" class="btn btn-outline-neutral btn-round">Ver más</button>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mr-auto ml-auto">
+                    <h2 class="title">Descubre Perú</h2>
+                    <h5 class="description">Explora los lugares más impresionantes de Perú, desde las antiguas ruinas incas hasta los paisajes naturales más hermosos. Cada rincón de este país tiene algo especial que ofrecer.</h5>
+                    <br>
+                    <a [routerLink]="['/galeria']" class="btn btn-danger btn-round">Ver Destinos</a>
+                </div>
+            </div>
+            <br/><br/>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="info">
+                        <div class="icon icon-danger">
+                            <i class="nc-icon nc-album-2"></i>
+                        </div>
+                        <div class="description">
+                            <h4 class="info-title">Galería Fotográfica</h4>
+                            <p class="description">Sumérgete en la belleza visual de Perú a través de nuestra galería de fotos impresionantes.</p>
+                            <a [routerLink]="['/galeria']" class="btn btn-link btn-danger">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info">
+                        <div class="icon icon-danger">
+                            <i class="nc-icon nc-world-2"></i>
+                        </div>
+                        <div class="description">
+                            <h4 class="info-title">Aventuras Inolvidables</h4>
+                            <p>Desde caminatas en la selva hasta surf en la costa, Perú ofrece aventuras para todos los gustos.</p>
+                            <a [routerLink]="['/galeria']" class="btn btn-link btn-danger">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info">
+                        <div class="icon icon-danger">
+                            <i class="nc-icon nc-globe-2"></i>
+                        </div>
+                        <div class="description">
+                            <h4 class="info-title">Patrimonio Cultural</h4>
+                            <p>Descubre la rica historia y cultura de Perú, desde sus antiguas civilizaciones hasta su actualidad.</p>
+                            <a [routerLink]="['/galeria']" class="btn btn-link btn-danger">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info">
+                        <div class="icon icon-danger">
+                            <i class="nc-icon nc-map-big"></i>
+                        </div>
+                        <div class="description">
+                            <h4 class="info-title">Guías de Viaje</h4>
+                            <p>Encuentra las mejores guías para planificar tu viaje y asegurarte de no perderte nada.</p>
+                            <a [routerLink]="['/contact']" class="btn btn-link btn-danger">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section section-dark text-center">
+        <div class="container">
+            <h2 class="title">Testimonios</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card card-profile card-plain">
+                        <div class="card-avatar">
+                            <a><img src="./assets/img/faces/t1.png" alt="..."></a>
+                        </div>
+                        <div class="card-block testimonial">
+                                <div class="author">
+                                    <h4 class="card-title">- Carla Rojas</h4>
+                                    <h6 class="card-category"></h6>
+                                </div>
+                            <p class="card-description text-center">"Mi viaje a Perú fue una experiencia increíble. Los paisajes son impresionantes y la gente es muy amable. ¡Recomiendo visitarlo!"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-profile card-plain">
+                        <div class="card-avatar testimonial">
+                            <a><img src="./assets/img/faces/t2.jpg" alt="..."></a>
+                        </div>
+                        <div class="card-block">
+                                <div class="author">
+                                    <h4 class="card-title">- Ana Torres</h4>
+                                    <h6 class="card-category"></h6>
+                                </div>
+                            <p class="card-description text-center">"Nunca olvidaré mi aventura en Machu Picchu. La historia y la belleza natural de Perú son incomparables."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-profile card-plain">
+                        <div class="card-avatar">
+                            <a><img src="./assets/img/faces/t3.jpg" alt="..."></a>
+                        </div>
+                        <div class="card-block">
+                                <div class="author">
+                                    <h4 class="card-title">- Roberto Gómez</h4>
+                                    <h6 class="card-category"></h6>
+                                </div>
+                            <p class="card-description text-center">"Perú es un destino que tiene de todo: historia soprendente, cultura atrapante, naturaleza y una gastronomía deliciosa."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mr-auto ml-auto">
+                    <h2 class="title">Itinerarios Sugeridos</h2>
+                    <h5 class="description">Planifica tu viaje con estos itinerarios sugeridos para explorar lo mejor de Perú.</h5>
+                    <ul class="list-group itinerarios">
+                        <li class="list-group-item itinerario-item">
+                            <h4 class="title">Ruta del Inca</h4>
+                            <p>Explora Cusco, el Valle Sagrado y termina tu viaje en la majestuosa Machu Picchu.</p>
+                        </li>
+                        <li class="list-group-item itinerario-item">
+                            <h4 class="title">Aventura en la Selva</h4>
+                            <p>Descubre la biodiversidad del Amazonas en Iquitos y el Parque Nacional del Manu.</p>
+                        </li>
+                        <li class="list-group-item itinerario-item">
+                            <h4 class="title">Escapada a la Costa</h4>
+                            <p>Disfruta del sol y el mar en las hermosas playas de Máncora y Punta Sal.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-3 landing-section">
+            <div class="row">
+                <div class="col-md-8 mr-auto ml-auto">
+                    <h2 class="text-center">¿Mantenerse en Contacto?</h2>
+                    <form class="contact-form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Nombre</label>
+                                <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text"><i class="nc-icon nc-single-02"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Nombre" (focus)="focus=true" (blur)="focus=false">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Email</label>
+                                <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text"><i class="nc-icon nc-email-85"></i></span>
+                                    </div>
+                                    <input type="email" class="form-control" placeholder="Email" (focus)="focus1=true" (blur)="focus1=false">
+                                </div>
+                            </div>
+                        </div>
+                        <label>Mensaje</label>
+                        <textarea class="form-control" rows="4" placeholder="Cuéntanos tus pensamientos y sentimientos..."></textarea>
+                        <div class="row">
+                            <div class="col-md-4 mr-auto ml-auto">
+                                <button class="btn btn-danger btn-lg btn-fill">Enviar Mensaje</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
